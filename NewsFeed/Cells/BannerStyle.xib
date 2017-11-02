@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+        <array key="SF-UI-Text-Semibold.otf">
+            <string>SFUIText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BannerStyle" customModule="NewsFeed" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="298"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner_image" translatesAutoresizingMaskIntoConstraints="NO" id="Ht1-ux-T6L">
+                    <rect key="frame" x="0.0" y="10" width="375" height="135"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eating mushrooms at breakfast may help you feel fuller" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wIa-f9-D69">
+                    <rect key="frame" x="14" y="157" width="341" height="51.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="341" id="vcl-iC-tqN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIText-Semibold" family="SF UI Text" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yVc-86-gpW">
+                    <rect key="frame" x="14" y="222.5" width="347" height="52.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="347" id="dfT-Kj-idJ"/>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="80" id="sCd-bD-FFQ"/>
+                    </constraints>
+                    <string key="text">"Starting the day with mushrooms could help you shed pounds from your waistline, new research has found," the Mail Online reports.</string>
+                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="yVc-86-gpW" firstAttribute="top" secondItem="wIa-f9-D69" secondAttribute="bottom" constant="14" id="HF3-jp-Bk7"/>
+                <constraint firstItem="wIa-f9-D69" firstAttribute="top" secondItem="Ht1-ux-T6L" secondAttribute="bottom" constant="12" id="M0Q-Kb-2nh"/>
+                <constraint firstAttribute="trailing" secondItem="yVc-86-gpW" secondAttribute="trailing" constant="14" id="MPj-Lp-uGC"/>
+                <constraint firstItem="Ht1-ux-T6L" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Nn3-Qd-6Yn"/>
+                <constraint firstAttribute="trailing" secondItem="Ht1-ux-T6L" secondAttribute="trailing" id="bhk-Dk-k3t"/>
+                <constraint firstItem="wIa-f9-D69" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="14" id="hLP-hK-7vR"/>
+                <constraint firstItem="Ht1-ux-T6L" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="nA9-mn-b4e"/>
+                <constraint firstItem="yVc-86-gpW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="14" id="oD4-8b-vV4"/>
+                <constraint firstAttribute="trailing" secondItem="wIa-f9-D69" secondAttribute="trailing" constant="20" id="wUY-hz-ySc"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-358" y="-388"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="banner_image" width="375" height="135"/>
+    </resources>
+</document>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListArticle" customModule="NewsFeed" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list_article_image" translatesAutoresizingMaskIntoConstraints="NO" id="IjH-Ew-3Iq">
+                    <rect key="frame" x="18" y="27" width="61" height="61"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="IjH-Ew-3Iq" secondAttribute="height" multiplier="1:1" id="1Wx-t3-11j"/>
+                        <constraint firstAttribute="width" constant="61" id="o7t-sj-PvP"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Read more" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeH-bf-cqA">
+                    <rect key="frame" x="294" y="77" width="61" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="61" id="FgX-gK-Vaw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="12"/>
+                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="JQy-3L-dQ1">
+                    <rect key="frame" x="110" y="96" width="245" height="2"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="JQy-3L-dQ1" secondAttribute="height" multiplier="245:2" id="w25-or-BEP"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DvB-1Q-K4A">
+                    <rect key="frame" x="92" y="35" width="184" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="iPr-Oy-JVH"/>
+                    </constraints>
+                    <string key="text">Vitamin D may help reduce 
+diabetes risk!</string>
+                    <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xeH-bf-cqA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="77" id="5DR-pG-LxD"/>
+                <constraint firstItem="IjH-Ew-3Iq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="27" id="Hgw-pQ-DHk"/>
+                <constraint firstItem="DvB-1Q-K4A" firstAttribute="top" secondItem="IjH-Ew-3Iq" secondAttribute="top" constant="8" id="JIM-x7-4Z8"/>
+                <constraint firstAttribute="trailing" secondItem="JQy-3L-dQ1" secondAttribute="trailing" constant="20" id="K8E-I9-s1m"/>
+                <constraint firstItem="IjH-Ew-3Iq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="18" id="MjC-40-mMx"/>
+                <constraint firstItem="JQy-3L-dQ1" firstAttribute="leading" secondItem="IjH-Ew-3Iq" secondAttribute="trailing" constant="31" id="XB1-1p-ec1"/>
+                <constraint firstItem="DvB-1Q-K4A" firstAttribute="leading" secondItem="IjH-Ew-3Iq" secondAttribute="trailing" constant="13" id="hmu-c5-kDF"/>
+                <constraint firstItem="JQy-3L-dQ1" firstAttribute="top" secondItem="xeH-bf-cqA" secondAttribute="bottom" constant="5" id="jAu-wh-ehg"/>
+                <constraint firstAttribute="trailing" secondItem="xeH-bf-cqA" secondAttribute="trailing" constant="20" id="usQ-fJ-x9j"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="25.5" y="-217"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Line" width="248" height="2"/>
+        <image name="list_article_image" width="61" height="61"/>
+    </resources>
+</document>

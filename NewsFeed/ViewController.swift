@@ -12,7 +12,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let apiService = ApiService()
+        apiService.fetchCellModel(page: 1, userId: 1) { (model) in
+            print(model)
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

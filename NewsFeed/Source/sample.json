@@ -1,0 +1,110 @@
+[
+    {
+        "type": "type_style1",
+		"image":"http://mysite.com/bigImage.png",
+		"title": "The art of the impossible",
+		"data":
+		{			
+			"section": "World Premier",
+			"description": "Inside the extraordinary world of Monument Valley 2",
+			"content":""
+		}
+    },
+    {
+        "type": "type_style2",
+		"image":"http://mysite.com/icon1.png",
+		"title": "Vitamin D may help reduce diabetes risk!",
+		"data":
+		{			
+			"section": "",
+			"description": "",
+			"content":""
+		}
+	},
+    {
+        "type": "type_style2",
+		"image":"http://mysite.com/icon2.png",
+		"title": "Want to live longer detox today",
+		"data":
+		{			
+			"section": "",
+			"description": "",
+			"content":""
+		}
+    },
+    {
+        "type": "type_style2",
+		"image":"http://mysite.com/icon3.png",
+		"title": "What can happen if high blood pressure is left untreated",
+		"data":
+		{			
+			"section": "",
+			"description": "",
+			"content":""
+		}
+    },
+    {
+        "type": "type_style2",
+		"image":"http://mysite.com/icon4.png",
+		"title": "Cataract what causes it",
+		"data":
+		{			
+			"section": "",
+			"description": "",
+			"content":""
+		}
+    },	
+    {
+        "type": "type_section",
+		"image":"",
+		"title": "Healthy Foods",
+		"data":
+		{			
+			"section": "",
+			"description": "",
+			"content":""
+		}
+    },
+    {
+        "type": "type_style3",
+		"image":"http://mysite.com/icon3.png",
+		"title": "Eating mushrooms at breakfast may help you feel fuller",
+		"data":
+		{			
+			"section": "",
+			"description": "Starting the day with mushrooms could help you shed pounds from your waistline, new research has found, the Mail Online reports.",
+			"content":
+				[{
+					"type":"type_style4",
+					"image":"http://mysite.com/icon5.png",
+					"title": "Thousands of studies could be flawed due to contaminated cells"
+				},
+				{
+					"type":"type_style4",
+					"image":"http://mysite.com/icon6.png",
+					"title": "Survey shows of Migraine Dissatisifed"
+				}]
+		}
+    },
+    {
+        "type": "type_row",
+		"image":"http://mysite.com/icon3.png",
+		"title": "Eating mushrooms at breakfast may help you feel fuller",
+		"data":
+		{			
+			"section": "",
+			"description": "Starting the day with mushrooms could help you shed pounds from your waistline, new research has found, the Mail Online reports.",
+			"content":
+				[{
+					"type": "type_style5",
+        			"title": "Rejuvenate yourself with Apt beauty skin care products",
+        			"image": "http://mysite.com/icon7.png"
+				},
+				{
+					"type": "type_style5",
+        			"title": "The terrible truth about Acid reflux disease",
+        			"image": "http://mysite.com/icon8.png"
+				}]
+		}
+    }
+]
